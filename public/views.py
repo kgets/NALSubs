@@ -7,3 +7,6 @@ def index(request):
 
 def about(request):
 	return render(request, 'public/about.html', {})
+
+def contact(request):
+	return render(request, 'public/contact.html', {})
