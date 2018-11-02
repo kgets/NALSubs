@@ -1,0 +1,75 @@
+{% extends "public/base.html" %}
+{% load staticfiles %}
+{% block title %} Northern AL Subways {% endblock %}
+{% block css %}
+  	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid">
+    	<div class="container">
+    		<span class="leftSpan">
+    			<img class="logo" src="{% static 'images/logo.png' %}">	
+    		</span>
+    		<span class="rightSpan">
+    			<div class="vertAlign">
+    				<p class="display-4"><strong>Northern Alabama Subways</strong></p>
+	   				<p class="lead"><strong>Driving Successful Franchieses in Northern Alabama for Over 20 years</strong></p>
+    			</div>
+    		</span>	
+    	</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h3>3 Steps towards owning your own SUBWAY&copy;</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="stepsThree"></div>
+				<div class="col">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="{% static 'images/application.png' %}">
+							</div>
+							<div class="col">
+								<p><strong>1. Fill out an Application</strong></p>
+								<p>Take the First step today in becoming a SUBWAY franchisee in North Alabama. Fill out the application <a href="https://subapps1.subway.com/AdditionalInfoApp/index.aspx?LC=ENG&CC=USA">Here</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="{% static 'images/mic.png' %}">
+							</div>
+							<div class="col">
+								<p><strong>2. Attend an Information Session</strong></p>
+								<p>We will reach out to you with details about information sessions that are coming up.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="{% static 'images/graph.png' %}">
+							</div>
+							<div class="col">
+								<p><strong>3. Develop a Business Plan</strong></p>
+								<p>Complete a business plan, and then take the final steps to ownership with our help.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+
+

@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 
 def index(request):
-	return render(request, 'public/home.html', {})
+	return render(request, 'public/index.html', {})
 
 
 def about(request):

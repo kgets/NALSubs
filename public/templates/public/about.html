@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>About me page</title>
-</head>
-<body>
+{% extends "public/base.html" %}
+{% load staticfiles %}
+{% block title %} About Us {% endblock %}
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
 
-	<h1>Hi, I was created by Kelly.</h1>
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+		<img src="{% static 'images/birmingham.jpg' %}">
+	</div>
+	<div class="row">
+		<p>
+		SUBWAY is considered the “healthy alternative” to the quick service offerings available today.  We make a strong point of comparing our products with our competitors when it comes to the fat content of fast food today.  We consistently promote the quality and freshness of our product and continue to leverage one of the key features of our system – that we make each and every sandwich to the customer’s exact specifications.  The first SUBWAY sandwich shop was opened in Bridgeport, Connecticut in 1965 by company co-founder Fred DeLuca.  In 1974, Fred and his business partner Dr. Peter Buck decided to begin franchising their restaurant, launching SUBWAY into tremendous growth, and providing almost unlimited opportunity for others to share in their prosperity! 
+		</p>
 
-	<a href="/">Return to Hello.</a>
-</body>
-</html>
+		<p class="replace">
+			<strong>replace with alabama information</strong>
+		In 1986 the North Carolina Subway Group, Inc. (NCSGI) began development in North Carolina, ultimately building one of the largest and most successful development agencies in the entire organization.  We actively encourage professional development within our restaurants to promote franchise expansion and offer opportunities to motivated, committed employees.  Our current Organization Chart illustrates how the different business components are connected.  SUBWAY has become the leading choice in North Carolina for people seeking quick, nutritious meals for the entire family to enjoy.  We at NCSGI are committed to helping franchisees in our state realize a fresh future with Subway!
+		</p>
+	</div>
+
+		
+</div>
+
+{% endblock %}

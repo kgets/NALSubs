@@ -1,0 +1,31 @@
+img {
+	width: 100%;
+	height: auto;
+}
+.jumbotron {
+	background-color: rgba(0, 137, 56, 1);
+}
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+}
+.stepsThree {
+	font-size: 1.0em;
+}
+.logo {
+	height: 200px;
+	width: auto;
+	float: right;
+}
+.container {
+	display: flex;
+}
+.leftSpan {
+	float: left;
+}
+.rightSpan {
+	float: right;
+}
+.vertAlign {
+	margin-top: 5%;
+}

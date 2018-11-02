@@ -1,0 +1,11 @@
+img	{
+	width:auto;
+	height:auto;
+	margin: 15px auto 15px;
+}
+.row {
+	margin: 0 17% 0;
+}
+.replace {
+	text-decoration: line-through;
+}
