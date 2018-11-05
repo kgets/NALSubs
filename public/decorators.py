@@ -8,7 +8,7 @@ def franchisee_required(function=None, redirect_field_name=REDIRECT_FIELD_NAME, 
     redirects to the log-in page if necessary.
     '''
     actual_decorator = user_passes_test(
-        lambda u: u.is_active and u.is_franchisee,
+        lambda u: u.is_active and u.is_sub_franchisee,
         login_url=login_url,
         redirect_field_name=redirect_field_name
     )
@@ -23,7 +23,7 @@ def staff_required(function=None, redirect_field_name=REDIRECT_FIELD_NAME, login
     redirects to the log-in page if necessary.
     '''
     actual_decorator = user_passes_test(
-        lambda u: u.is_active and u.is_staff,
+        lambda u: u.is_active and u.is_sub_staff,
         login_url=login_url,
         redirect_field_name=redirect_field_name
     )
