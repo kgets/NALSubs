@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block content %}
-
 <p>Franchisee area</p>
-
+<ul>
+	{% for file in queryset %}
+	<li><a href="{{file.file.url}}">{{file.title}}</a> , {{file.description}}, {{file.upload_date}}</li>
+	{% endfor %}
+</ul>
 {% endblock %}

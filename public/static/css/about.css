@@ -1,7 +1,14 @@
-img	{
-	width:auto;
-	height:auto;
-	margin: 15px auto 15px;
+img {
+	width: 100%;
+	height: auto;
+}
+.logo {
+	height: 200px;
+	width: auto;
+	float: right;
+}
+.container {
+	display: flex;
 }
 .row {
 	margin: 0 17% 0;

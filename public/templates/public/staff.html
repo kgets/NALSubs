@@ -2,11 +2,15 @@
 {% load staticfiles %}
 {% block title %} Staff Files {% endblock %}
 {% block css %}
-  <link rel="stylesheet" type="text/css" href="{% static 'css/staff.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/staff.css' %}">
 {% endblock %}
 
 {% block content %}
 
 <p>Staff area</p>
-
+<ul>
+	{% for file in queryset %}
+	<li><a href="{{file.file.url}}">{{file.title}}</a> , {{file.description}}, {{file.upload_date}}</li>
+	{% endfor %}
+</ul>
 {% endblock %}

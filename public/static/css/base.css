@@ -2,16 +2,26 @@
 	body { padding-top: 0px; }
 }
 body {
-	padding-top: 55px;
+	padding: 55px 0 0 0;
 	background-color: lightgrey;
-	color: rgba(61, 61, 63, 1);
 	font-style: "Lato", sans-serif;
-	padding-bottom: 90px;
+	/*text-align: center;*/
+	color: #000;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 .footer {
-	position: fixed;
+	position: static;
 	bottom: 0;
-	background-color: rgba(61, 61, 63, 1);
+	background-color: #282d30;
 	width: 100%;
-	padding-left: 5%;
+	color: #fff;
+	padding: 10px 0 10px;
+}
+.content-container {
+	flex-grow: 1;
 }
