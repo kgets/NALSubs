@@ -29,3 +29,26 @@ h3 {
 .vertAlign {
 	margin-top: 5%;
 }
+.c1 {
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+.c1 img {
+    display: block;
+    margin: auto;
+    padding: 0px 0px 0px;
+}
+.c1 .col-1 {
+	padding: 0 0 0;
+}
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
