@@ -27,7 +27,4 @@ urlpatterns = [
     # path('accounts/logout/', views.logout, name='logout', kwargs={'next_page': '/'}),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', include('public.urls')),
-    re_path(r'^media/(?P<path>.*)$', serve, {
-            'document_root': settings.MEDIA_ROOT,
-        }),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
