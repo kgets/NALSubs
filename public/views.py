@@ -2,10 +2,13 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .decorators import franchisee_required, staff_required
 from .models import Upload
+import os
+from django.conf import settings
 
 
 def index(request):
-	return render(request, 'public/index.html', {})
+	# images = os.listdir(os.path.join(settings.STATIC_ROOT, 'images/stores'))
+	return render(request, 'public/index.html', {}) #'img': images
 
 def about(request):
 	return render(request, 'public/about.html', {})

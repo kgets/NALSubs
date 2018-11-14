@@ -52,3 +52,7 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+/*.carousel > .item > img {
+  width:640px;
+  height:360px;
+}*/
