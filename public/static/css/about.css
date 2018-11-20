@@ -16,3 +16,6 @@ img {
 .replace {
 	text-decoration: line-through;
 }
+.container-fluid {
+	margin-top: 5px;
+}
